@@ -37,7 +37,7 @@ x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3, ran
 modelo = KNeighborsClassifier(n_neighbors=5)
 modelo.fit(x_treino,y_treino)
 y_pred = modelo.predict(x_teste)
-print("Accuracy:",metrics.accuracy_score(y_teste, y_pred))
+print("Precisao:",metrics.accuracy_score(y_teste, y_pred))
 # Train the model using the training sets
 print(classification_report(y_teste, y_pred))
 print('\n')
