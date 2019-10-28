@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 
 base = pd.read_csv('cardio_train.csv')
-caracteristicas = ['id', 'age', 'gender', 'height','weight','ap_hi','ap_lo','cholesterol','gluc','smoke','alco','active']
+caracteristicas = ['age', 'gender', 'height','weight','ap_hi','ap_lo','cholesterol','gluc','smoke','alco','active']
 
 age = []
 for i in base.age.values:
